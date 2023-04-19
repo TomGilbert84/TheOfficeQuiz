@@ -1,4 +1,4 @@
-# TheOfficeLinesQuiz
+# The Office Quiz
 
 A project which uses the [jxm/the_office_lines](https://huggingface.co/datasets/jxm/the_office_lines/blob/main/README.md) dataset to create a game based on the American version of The Office
 
