@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Office Quiz</title>
+  </head>
+  <body>
+    <h1>The Office Quiz</h1>
+    <p>{{ question }}</p>
+    <form method="POST">
+      {% for option in answer_options %}
+        <input type="radio" name="answer" value="{{ option }}"> {{ option }}<br>
+      {% endfor %}
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
