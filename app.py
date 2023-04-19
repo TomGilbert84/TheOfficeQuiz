@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+import os
+from flask import Flask, render_template, request, send_from_directory
 import random
 from datasets import load_dataset
 
@@ -6,6 +7,12 @@ dataset = load_dataset("jxm/the_office_lines")
 speakers = list(set(example["speaker"] for example in dataset["train"]))
 
 app = Flask(__name__)
+
+
+@app.route('/static/<path:path>')
+def serve_static(path):
+    root_dir = os.getcwd()
+    return send_from_directory(os.path.join(root_dir, 'static'), path)
 
 
 @app.route('/')

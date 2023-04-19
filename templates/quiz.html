@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
     <title>The Office Quiz</title>
   </head>
   <body>
@@ -9,8 +9,11 @@
     <p>{{ question }}</p>
     <form method="POST">
       {% for option in answer_options %}
-        <input type="radio" name="answer" value="{{ option }}"> {{ option }}<br>
-      {% endfor %}
+  <label>
+    <input type="radio" name="answer" value="{{ option }}">
+    {{ option }}
+  </label><br>
+{% endfor %}
       <br>
       <input type="submit" value="Submit">
     </form>
