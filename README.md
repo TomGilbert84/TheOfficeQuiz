@@ -4,4 +4,6 @@ A project which uses the [jxm/the_office_lines](https://huggingface.co/datasets/
 
 To run the quiz in the terminal, type `python officeTrivia.py`
 
+To run the quiz in the front end, type `flask run`
+
 ![The Office!](/the-office-handshake.jpg "Michael handshake")

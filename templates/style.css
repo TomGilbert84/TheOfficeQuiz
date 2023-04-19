@@ -1,0 +1,27 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #009688;
+}
+
+input[type="submit"] {
+  background-color: #009688;
+  color: #fff;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+input[type="submit"]:hover {
+  background-color: #00796b;
+}
+
+a:hover {
+  text-decoration: underline;
+}
