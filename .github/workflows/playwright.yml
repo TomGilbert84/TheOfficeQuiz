@@ -19,6 +19,8 @@ jobs:
       run: npm install concurrently
     - name: Install Flask
       run: pip install flask
+    - name: Install Datasets
+      run: pip install datasets
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
