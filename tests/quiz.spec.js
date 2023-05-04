@@ -38,5 +38,3 @@ test('the one where the website has a submit button', async () => {
   // Assert that the submit button value includes the word "Submit"
   expect(submitButtonValue).toContain('Submit');
 });
-
-
