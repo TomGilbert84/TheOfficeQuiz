@@ -15,6 +15,10 @@ jobs:
         node-version: 16
     - name: Install dependencies
       run: npm ci
+    - name: Install concurrently
+      run: npm install concurrently
+    - name: Install Flask
+      run: pip install flask
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
