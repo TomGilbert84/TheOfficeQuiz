@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>The Office Quiz</h1>
-    <p>{{ question }}</p>
+    <p id="question">{{ question }}</p>
     <form method="POST">
       {% for option in answer_options %}
   <label>
@@ -15,7 +15,7 @@
   </label><br>
 {% endfor %}
       <br>
-      <input type="submit" value="Submit">
+      <input id="submit-button" type="submit" value="Submit">
     </form>
   </body>
 </html>

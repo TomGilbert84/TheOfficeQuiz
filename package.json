@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.33.0",
+    "playwright": "^1.33.0"
+  },
+  "scripts": {
+    "test": "npx concurrently \"flask run\" \"wait-on http://127.0.0.1:5000 && npx playwright test --project=chromium\""
+  },
+  "dependencies": {
+    "wait-on": "^7.0.1"
+  }
+}
