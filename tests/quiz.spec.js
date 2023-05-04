@@ -21,7 +21,7 @@ test('the one where the quiz has a question and 4 answers', async ({ page }) => 
   expect(answerOptions).toEqual(4);
 });
 
-test('the own where the website has a submit button', async ({ page }) => {
+test('the one where the website has a submit button', async ({ page }) => {
   await page.goto('http://127.0.0.1:5000');
 
   // Expect page to have a submit button.
