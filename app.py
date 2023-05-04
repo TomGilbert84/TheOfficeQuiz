@@ -20,8 +20,6 @@ def serve_static(path):
 
 @app.route('/')
 def quiz():
-    # Use the external dataset
-    dataset = load_dataset("jxm/the_office_lines")
 
     # Select a random line spoken by any character in the dataset
     example = random.choice(dataset["train"])
