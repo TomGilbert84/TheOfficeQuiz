@@ -29,6 +29,8 @@ jobs:
       run: npm run app
     - name: Run Playwright tests and create Allure report data
       run: npm run tests
+    - name: Add Allure to PATH
+      run: export PATH="$PATH:./node_modules/.bin"
     - name: Generate Allure report data
       run: npm run generate-allure
     - uses: actions/upload-artifact@v3
