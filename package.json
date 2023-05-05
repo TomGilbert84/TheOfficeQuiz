@@ -6,7 +6,7 @@
   },
   "scripts": {
     "app": "flask run",
-    "tests": "npx playwright test --reporter=line,allure-playwright",
+    "tests": "wait-on http://127.0.0.1:5000 && npx playwright test --reporter=line,allure-playwright",
     "generate-allure": "allure generate ./allure-results --clean",
     "open-allure": "allure open ./allure-report"
   },
