@@ -5,7 +5,10 @@
     "playwright": "^1.33.0"
   },
   "scripts": {
-    "test": "npx concurrently \"flask run\" \"npx playwright test\""
+    "app": "flask run",
+    "tests": "npx playwright test --reporter=line,allure-playwright\"",
+    "generate-allure": "allure generate ./allure-results --clean",
+    "open-allure": "allure open ./allure-report"
   },
   "dependencies": {
     "wait-on": "^7.0.1"
