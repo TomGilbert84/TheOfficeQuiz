@@ -35,6 +35,8 @@ jobs:
       run: export PATH="$PATH:./node_modules/.bin"
     - name: Generate Allure report data
       run: npm run generate-allure
+    - name: Serve the Allure report
+      run: npm run serve-allure
     - uses: actions/upload-artifact@v3
       if: always()
       with:
