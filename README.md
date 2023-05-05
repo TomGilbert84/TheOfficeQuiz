@@ -16,4 +16,6 @@ To open the report, type `npm run open-allure`.
 
 The Allure report will also be published [here](https://tomgilbert84.github.io/TheOfficeQuiz/). 
 
+[![Playwright Tests](https://github.com/TomGilbert84/TheOfficeQuiz/actions/workflows/playwright.yml/badge.svg)](https://github.com/TomGilbert84/TheOfficeQuiz/actions/workflows/playwright.yml)
+
 ![The Office!](/the-office-handshake.jpg "Michael handshake")
