@@ -23,8 +23,8 @@ jobs:
       run: pip install datasets
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npm run test
+    - name: Run Playwright tests and create Allure report data
+      run: npm run tests
     - uses: actions/upload-artifact@v3
       if: always()
       with:
