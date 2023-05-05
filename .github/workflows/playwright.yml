@@ -21,10 +21,10 @@ jobs:
       run: pip install flask
     - name: Install Datasets
       run: pip install datasets
-    - name: Install Allure
-      run: npm i -D @playwright/test allure-playwright
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Install Allure
+      run: npm i -D @playwright/test allure-playwright
     - name: Start server
       run: npm run app
     - name: Run Playwright tests and create Allure report data
