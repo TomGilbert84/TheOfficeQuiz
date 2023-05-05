@@ -14,4 +14,6 @@ To generate the Allure report, type `npm run generate-allure`.
 
 To open the report, type `npm run open-allure`.
 
+The Allure report will also be published [here](https://tomgilbert84.github.io/TheOfficeQuiz/). 
+
 ![The Office!](/the-office-handshake.jpg "Michael handshake")
