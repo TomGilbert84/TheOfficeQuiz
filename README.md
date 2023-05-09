@@ -16,7 +16,7 @@ To open the report, type `npm run open-allure`.
 
 The Allure report will also be published [here](https://tomgilbert84.github.io/TheOfficeQuiz/). 
 
-Note: there is a slight time delay before the Allure report is updated on the link above. To view the report once the build has completed, the url can be edited to include the latest build number.
+Note: there is a slight time delay before the Allure report is updated on the link above.
 
 [![Playwright Tests](https://github.com/TomGilbert84/TheOfficeQuiz/actions/workflows/playwright.yml/badge.svg)](https://tomgilbert84.github.io/TheOfficeQuiz/)
 
