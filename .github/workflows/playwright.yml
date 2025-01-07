@@ -20,7 +20,7 @@ jobs:
     - name: Install Datasets
       run: pip install datasets
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
+      run: npx playwright install
     - name: Install Allure
       run: npm i -D @playwright/test allure-playwright
     - name: Install Allure command line
