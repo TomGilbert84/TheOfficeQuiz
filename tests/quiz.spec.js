@@ -12,12 +12,12 @@ test.afterAll(async () => {
   await page.close();
 });
 
-test('the one where the website has a title in the browser', async () => {
+test('should display the correct title in the browser', async () => {
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/The Office Quiz/);
 });
 
-test('the one where the quiz has a question and 4 answers', async () => {
+test('should display a question and 4 answer options', async () => {
   // Verify that a question is displayed
   const question = await page.getByTestId('question');
   expect(question).toBeTruthy();
@@ -27,9 +27,9 @@ test('the one where the quiz has a question and 4 answers', async () => {
   expect(answerOptions).toEqual(4);
 });
 
-test('the one where the website has a submit button', async () => {
+test('should have a submit button with correct value', async () => {
   // Expect page to have a submit button.
-  const submitButton = await page.getByRole('button', {name: 'Submit'}) 
+  const submitButton = await page.getByRole('button', { name: 'Submit' });
   expect(submitButton).toBeTruthy();
 
   // Find the submit button value
