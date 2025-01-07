@@ -18,6 +18,18 @@ The Allure report will also be published [here](https://tomgilbert84.github.io/T
 
 Note: there is a slight time delay before the Allure report is updated on the link above.
 
+If the token expires, do the following:
+
+Solution:
+
+Regenerate a new PAT from GitHub:
+Go to GitHub Developer Settings.
+Click Generate new token (classic) and give it the required permissions.
+Save the token securely (you won't see it again).
+Update the GitHub Actions secret with the new PAT:
+In your GitHub repository, go to Settings > Secrets and variables > Actions.
+Add or update a secret named GH_TOKEN or similar with the new PAT.
+
 [![Playwright Tests](https://github.com/TomGilbert84/TheOfficeQuiz/actions/workflows/playwright.yml/badge.svg)](https://tomgilbert84.github.io/TheOfficeQuiz/)
 
 # ToDo 
